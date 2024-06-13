@@ -2,6 +2,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Strings {
+
+    public static void evenLength(String sentence){
+        String[] words=sentence.split(" ");
+        for (String word: words) {
+            if(word.length()%2==0){
+                System.out.println(word);
+            }
+        }
+    }
+
     public static String reverse(String str){
         char[] ar=str.toCharArray();
         int left=0,right=str.length()-1;
@@ -62,6 +72,16 @@ public class Strings {
 
 
         return Arrays.equals(ch1,ch2);
+    }
+
+    public static boolean pangram(String str){
+        str=str.toLowerCase();
+        for (char ch = 'a'; ch <='z' ; ch++) {
+            if(!str.contains(ch+"")){
+                return false;
+            }
+        }
+        return true;
     }
 
 
