@@ -50,7 +50,6 @@ public class Strings {
                 charCount++;
             }
         }
-
         System.out.println("Words : " +wordCount);
         System.out.println("Chars : "+charCount);
         System.out.println("Spaces : "+spaceCount);

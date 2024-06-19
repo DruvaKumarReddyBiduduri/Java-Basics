@@ -103,14 +103,14 @@ public class Arrays {
 
         int k=0;
         for (int ele : arr) {
-            boolean wordFound = false;
+            boolean eleFound = false;
             for (int e : newArray) {
                 if (e == ele) {
-                    wordFound = true;
+                    eleFound = true;
                     break;
                 }
             }
-            if (!wordFound) {
+            if (!eleFound) {
                 newArray[k++] = ele;
             }
         }

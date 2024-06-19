@@ -58,7 +58,6 @@ public class Digit {
         } else {
             System.out.println(num + " is not armstrong number");
         }
-        ;
     }
 
     public static int count(int num) {
