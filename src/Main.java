@@ -1,10 +1,12 @@
+import authentication.EmployeeService;
 import collections.ArrayListPrograms;
 import multithreading.*;
 
 public class Main {
     public static void main(String[] args) {
+        EmployeeService.run();
 
-        ArrayListPrograms.run();
+//        ArrayListPrograms.run();
 //        BankAccount ba=new BankAccount(10000);
 //
 //        WithdrawlThread th1=new WithdrawlThread(ba,5000);
