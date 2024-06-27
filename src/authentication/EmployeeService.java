@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class EmployeeService {
 
     private static void initializeEmployees(DataSource dataSource) {
-        dataSource.addEmployee(new Employee("Gojo", "Password", 13000.0));
-        dataSource.addEmployee(new Employee("Sukuna", "sukuna", 3000.0));
+        dataSource.addEmployee(new Employee("Gojo", "gojo", 13000.0));
+        dataSource.addEmployee(new Employee("luffy", "baka", 3000.0));
         dataSource.addEmployee(new Employee("Naruto", "sasuke", 9000.0));
         dataSource.addEmployee(new Employee("Jiraya", "106", 10000.0));
     }
@@ -14,7 +14,6 @@ public class EmployeeService {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
         DataSource dataSource = new EmployeeMap();
-//        DataSource dataSource = new EmployeeList();
         AuthenticationService authenticationService = new AuthenticationService(dataSource);
         initializeEmployees(dataSource);
 

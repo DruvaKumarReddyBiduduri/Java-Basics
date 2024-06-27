@@ -1,12 +1,18 @@
 import authentication.EmployeeService;
 import collections.ArrayListPrograms;
+import fileoperations.ReadFile;
+import fileoperations.ReadFileBufferReader;
+import fileoperations.ReadFileScanner;
 import multithreading.*;
+import restaurant.Restaurant;
 
 public class Main {
     public static void main(String[] args) {
-        EmployeeService.run();
+//        EmployeeService.run();
 
-//        ArrayListPrograms.run();
+        Restaurant restaurant=new Restaurant();
+
+        restaurant.run();
 //        BankAccount ba=new BankAccount(10000);
 //
 //        WithdrawlThread th1=new WithdrawlThread(ba,5000);
