@@ -1,5 +1,3 @@
-import java.util.Collections;
-
 public class Arrays {
     public static int sum(int[] arr){
         int sum=arr[0];
@@ -98,7 +96,7 @@ public class Arrays {
         return arr;
     }
 
-    public static void removeDuplicates(int[] arr){
+    public static int[] removeDuplicates(int[] arr){
         int[] newArray=new int[arr.length];
 
         int k=0;
@@ -114,6 +112,7 @@ public class Arrays {
                 newArray[k++] = ele;
             }
         }
+        return newArray;
 
     }
 

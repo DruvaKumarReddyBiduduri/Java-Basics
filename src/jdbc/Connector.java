@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Connector {
-    private Connection conn=null;
+    public static Connection conn=null;
     private String url,name,password;
 
 

@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class App {
     public static void run(){
-        Connector connector = new Connector("jdbc:mysql://localhost:3306/tasks", "root", ".Adgjmptw5");
+        Connector connector = new Connector("jdbc:mysql://localhost:3306/tasks", "root", "");
 
         Connection connection = connector.getConn();
         String query = "select * from person";
