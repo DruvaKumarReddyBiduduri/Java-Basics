@@ -1,7 +1,4 @@
 import jdbc.App;
-import restaurant.Restaurant;
-
-import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) {

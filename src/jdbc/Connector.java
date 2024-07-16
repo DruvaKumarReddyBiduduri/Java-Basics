@@ -9,7 +9,7 @@ public class Connector {
     private String url,name,password;
 
 
-    Connector(String url,String name,String password){
+    public Connector(String url, String name, String password){
         this.name=name;
         this.password=password;
         this.url=url;
